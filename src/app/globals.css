@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: oklch(0.985 0 0);
+
+ --primary:oklch(78.93% 0.182 72.79);
+  --muted: oklch(0.87 0 0);
+  --accent: oklch(0.97 0 0);
+
+  --heading: oklch(0.147 0.004 49.25);
+  --text: oklch(0.374 0.01 67.558);
+  --text-muted: oklch(0.553 0.013 58.071);
+
+  --border: oklch(0.87 0 0);
+}
+.dark {
+  --background: oklch(0.145 0 0);
+
+  --primary:oklch(78.93% 0.182 72.79);
+  --muted: oklch(0.269 0 0);
+  --accent: oklch(0.205 0 0);
+
+  --heading: oklch(0.985 0.001 106.423);
+  --text: oklch(0.869 0.005 56.366);
+  --text-muted: oklch(0.553 0.013 58.071);
+
+  --border: oklch(0.371 0 0);
 }
 
 @theme inline {
+
+  --color-*: initial;
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-heading: var(--heading);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border focus-visible:outline-none;
+  }
+  body {
+    @apply bg-background text-text text-sm;
+  }
+  button {
+    @apply cursor-pointer;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .padding {
+    @apply px-2 sm:px-4 md:px-6 lg:px-10 xl:px-12 2xl:px-14;
+  }
+
+  .width {
+    @apply w-full max-w-[90rem] mx-auto;
+  }
 }
