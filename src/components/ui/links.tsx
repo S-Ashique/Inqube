@@ -9,9 +9,9 @@ export const linkVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-heading hover:bg-primary/80 focus-visible:bg-primary/80 active:bg-primary/80 [&_svg]:fill-heading",
+          "bg-primary text-heading hover:bg-primary/80 focus-visible:bg-primary/80 active:bg-primary/80 [&_svg]:fill-text [&_svg]:stroke-text",
         outline:
-          "border bg-dark hover:bg-accent focus-visible:bg-accent active:bg-accent",
+          "border bg-accent hover:bg-muted focus-visible:bg-muted active:bg-muted",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

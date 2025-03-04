@@ -81,3 +81,184 @@ export const LogoIcon = ({ className }: { className?: string }) => {
     </>
   );
 };
+export const ReadershipIcon = ({
+  className = "size-12",
+}: {
+  className?: string;
+}) => {
+  return (
+    <>
+      <svg
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={cn(className)}
+      >
+        <path
+          d="M3 3H15C21.6274 3 27 8.37258 27 15H15C8.37258 15 3 9.62742 3 3Z"
+          className="fill-text-muted"
+        />
+        <path
+          d="M3 15H15C21.6274 15 27 20.3726 27 27H15C8.37258 27 3 21.6274 3 15Z"
+          className="fill-primary"
+        />
+      </svg>
+    </>
+  );
+};
+export const ContributionIcon = ({
+  className = "size-12",
+}: {
+  className?: string;
+}) => {
+  return (
+    <>
+      <svg
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={cn(className)}
+      >
+        <path
+          d="M15 21C15 24.3137 17.6863 27 21 27C24.3137 27 27 24.3137 27 21C27 17.6863 24.3137 15 21 15H15V21Z"
+          className="fill-primary"
+        />
+        <path
+          d="M15 9C15 5.68629 12.3137 3 9 3C5.68629 3 3 5.68629 3 9C3 12.3137 5.68629 15 9 15H15V9Z"
+          className="fill-primary"
+        />
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M21 3C17.6863 3 15 5.68629 15 9V15H21C24.3137 15 27 12.3137 27 9C27 5.68629 24.3137 3 21 3ZM24 9C24 10.6569 22.6569 12 21 12C19.3431 12 18 10.6569 18 9C18 7.34315 19.3431 6 21 6C22.6569 6 24 7.34315 24 9Z"
+          className="fill-text-muted"
+        />
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M9 27C12.3137 27 15 24.3137 15 21V15H9C5.68629 15 3 17.6863 3 21C3 24.3137 5.68629 27 9 27ZM12 21C12 22.6569 10.6569 24 9 24C7.34315 24 6 22.6569 6 21C6 19.3431 7.34315 18 9 18C10.6569 18 12 19.3431 12 21Z"
+          className="fill-text-muted"
+        />
+      </svg>
+    </>
+  );
+};
+export const NewsIcon = ({ className = "size-12" }: { className?: string }) => {
+  return (
+    <>
+      <svg
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={cn(className)}
+      >
+        <path
+          d="M17.3562 20.65H12.6729V30H17.3562V20.65Z"
+          className="fill-text-muted"
+        />
+        <path
+          d="M17.3562 0H12.6729V9.35H17.3562V0Z"
+          className="fill-text-muted"
+        />
+        <path
+          d="M20.646 12.6567V17.3401H29.996V12.6567H20.646Z"
+          className="fill-text-muted"
+        />
+        <path
+          d="M0 12.661L0 17.3443H9.35V12.661H0Z"
+          className="fill-text-muted"
+        />
+        <path
+          d="M20.6544 17.3261L17.3428 20.6377L23.9542 27.2491L27.2657 23.9375L20.6544 17.3261Z"
+          className="fill-primary"
+        />
+        <path
+          d="M6.05475 2.72734L2.74316 6.03893L9.35455 12.6503L12.6661 9.33873L6.05475 2.72734Z"
+          className="fill-primary"
+        />
+        <path
+          d="M17.332 9.35308L20.6436 12.6647L27.2549 6.05328L23.9434 2.74169L17.332 9.35308Z"
+          className="fill-primary"
+        />
+        <path
+          d="M2.73432 23.9518L6.0459 27.2634L12.6573 20.652L9.3457 17.3405L2.73432 23.9518Z"
+          className="fill-primary"
+        />
+      </svg>
+    </>
+  );
+};
+
+export const FuturesIcon = ({
+  className = "size-12",
+}: {
+  className?: string;
+}) => {
+  return (
+    <>
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={cn(className)}
+      >
+        <path
+          d="M28.75 28.75C35.4207 27.1442 40 23.8291 40 20C40 16.1709 35.4207 12.8558 28.75 11.25C29.4363 13.8829 29.8225 16.8547 29.8225 20C29.8225 23.1453 29.4363 26.1171 28.75 28.75Z"
+          className="fill-text-muted"
+        />
+        <path
+          d="M11.25 28.75C4.57932 27.1442 0 23.8291 0 20C0 16.1709 4.57932 12.8558 11.25 11.25C10.5637 13.8829 10.1775 16.8547 10.1775 20C10.1775 23.1453 10.5637 26.1171 11.25 28.75Z"
+          className="fill-text-muted"
+        />
+        <path
+          d="M11.25 28.75C12.8558 35.4207 16.1709 40 20 40C23.8291 40 27.1442 35.4207 28.75 28.75C26.1171 29.4363 23.1453 29.8225 20 29.8225C16.8547 29.8225 13.8829 29.4363 11.25 28.75Z"
+          className="fill-primary"
+        />
+        <path
+          d="M11.25 11.25C12.8558 4.57932 16.1709 -1.74166e-07 20 0C23.8291 1.74166e-07 27.1442 4.57932 28.75 11.25C26.1171 10.5637 23.1453 10.1775 20 10.1775C16.8547 10.1775 13.8829 10.5637 11.25 11.25Z"
+          className="fill-primary"
+        />
+      </svg>
+    </>
+  );
+};
+
+export const ResearchIcon = ({
+  className = "size-12",
+}: {
+  className?: string;
+}) => {
+  return (
+    <>
+      <svg
+        width="58"
+        height="50"
+        viewBox="0 0 58 50"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={cn(className)}
+      >
+        <path
+          d="M13.4126 34.5424L13.4126 50H44.3598V34.5424H13.4126Z"
+          className="fill-primary"
+        />
+        <path
+          d="M44.3535 34.5291L57.7397 26.8003L42.2661 -9.68632e-07L28.8799 7.72878L44.3535 34.5291Z"
+          className="fill-text-muted"
+        />
+        <path
+          d="M28.8599 7.74978L15.4736 0.0209961L2.19345e-05 26.8213L13.3863 34.5501L28.8599 7.74978Z"
+          className="fill-text-muted"
+        />
+      </svg>
+    </>
+  );
+};
