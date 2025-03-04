@@ -8,7 +8,7 @@ import { ArrowIcon } from "../svg";
 const Hero = () => {
   return (
     <section className="width">
-      <div className="border-l border-r border-b grid md:grid-cols-12 gap-px bg-border">
+      <div className="border-l border-r grid md:grid-cols-12 gap-px bg-border">
         <ColumnOne className="md:col-span-7 " />
         <ColumnTwo className=" md:col-span-5 bg-background" />
         <ColumnThree className=" md:col-span-full" />
@@ -26,7 +26,7 @@ const ColumnOne = ({ className }: { className?: string }) => {
         <p className="text-lg text-text-muted font-medium">
           Your Path to the Future Starts Today
         </p>
-        <h1 className="text-3xl font-semibold mt-1 text-heading">
+        <h1 className="text-3xl font-semibold text-heading mt-1">
           Discover New Horizons in Artificial Intelligence
         </h1>
         <p className="mt-8 max-w-xl">
