@@ -1,4 +1,10 @@
-import { ContributionIcon, FuturesIcon, NewsIcon, ReadershipIcon, ResearchIcon } from "../svg";
+import {
+  ContributionIcon,
+  FuturesIcon,
+  NewsIcon,
+  ReadershipIcon,
+  ResearchIcon,
+} from "../svg";
 
 export const counterList = [
   { number: "300", title: "Resources available" },
@@ -79,5 +85,46 @@ export const futuresList = [
         text: "Contributions from tech researchers and academics.",
       },
     ],
+  },
+];
+
+export const knowledgeProfilePictures = [
+  {
+    src: "/male_one.png",
+    name: "John Techson",
+    subject: "Quantum Computing",
+    date: "October 15, 2023",
+    heading: "The Quantum Leap in Computing",
+    text: "Explore the revolution in quantum computing, its applications, and its potential impact on various industries.",
+    link: "/",
+    like: "24.5k",
+    comment: "50",
+    share: "20",
+  },
+
+  {
+    src: "/female_two.png",
+    name: "Sarah Ethicist",
+    subject: "AI Ethics",
+    date: "November 5, 2023",
+    heading: "The Ethical Dilemmas of AI",
+    text: "A deep dive into ethical challenges posed by AI, including bias, privacy, and transparency.",
+    link: "/",
+    like: "32k",
+    comment: "72",
+    share: "18",
+  },
+
+  {
+    src: "/male_two.png",
+    name: "Astronomer X",
+    subject: "Space Exploration",
+    date: "December 10, 2023",
+    heading: "The Mars Colonization Challenge",
+    text: "Exploring the technical and logistical challenges of human colonization on Mars.",
+    link: "/",
+    like: "20k",
+    comment: "31",
+    share: "12",
   },
 ];

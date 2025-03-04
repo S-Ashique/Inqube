@@ -21,7 +21,7 @@ const Futures = () => {
           >
             <div className="md:col-span-5 padding bg-background flex flex-col justify-center pt-10 md:py-10">
               <div className="">{icon}</div>
-              <h1 className="text-2xl font-semibold text-heading mt-6">{heading}</h1>
+              <h2 className="text-2xl font-semibold text-heading mt-6">{heading}</h2>
               <p className="mt-2">{text} </p>
             </div>
 

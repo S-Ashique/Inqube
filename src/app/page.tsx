@@ -1,5 +1,6 @@
 import Futures from "@/components/home/futures";
 import Hero from "@/components/home/hero";
+import Knowledge from "@/components/home/knowledge";
 import React from "react";
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
     <>
       <Hero />
       <Futures />
-      <div className="pb-32 border-t"></div>
+      <Knowledge />
     </>
   );
 };

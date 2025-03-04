@@ -6,6 +6,8 @@
   --background: oklch(0.985 0 0);
 
   --primary: oklch(78.93% 0.182 72.79);
+  --red: oklch(0.637 0.237 25.331);
+
   --muted: oklch(0.87 0 0);
   --accent: oklch(0.922 0 0);
 
@@ -19,6 +21,8 @@
   --background: oklch(0.145 0 0);
 
   --primary: oklch(78.93% 0.182 72.79);
+  --red: oklch(0.577 0.245 27.325);
+
   --muted: oklch(0.269 0 0);
   --accent: oklch(0.205 0 0);
 
@@ -33,6 +37,7 @@
   --color-*: initial;
   --color-background: var(--background);
   --color-primary: var(--primary);
+  --color-red: var(--red);
   --color-accent: var(--accent);
   --color-muted: var(--muted);
   --color-heading: var(--heading);

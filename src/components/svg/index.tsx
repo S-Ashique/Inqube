@@ -262,3 +262,71 @@ export const ResearchIcon = ({
     </>
   );
 };
+
+export const LikeIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      width="22"
+      height="20"
+      viewBox="0 0 22 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn("stroke-text-muted size-4", className)}
+    >
+      <path
+        d="M11.62 18.81C11.28 18.93 10.72 18.93 10.38 18.81C7.48 17.82 1 13.69 1 6.68998C1 3.59998 3.49 1.09998 6.56 1.09998C8.38 1.09998 9.99 1.97998 11 3.33998C12.01 1.97998 13.63 1.09998 15.44 1.09998C18.51 1.09998 21 3.59998 21 6.68998C21 13.69 14.52 17.82 11.62 18.81Z"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CommentIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      width="16"
+      height="15"
+      viewBox="0 0 16 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn("stroke-text-muted size-4", className)}
+    >
+      <path
+        d="M5.07167 13.4906C5.95564 13.9235 6.94952 14.1666 8.00016 14.1666C11.6821 14.1666 14.6668 11.1819 14.6668 7.49992C14.6668 3.81802 11.6821 0.833252 8.00016 0.833252C4.31827 0.833252 1.3335 3.81802 1.3335 7.49992C1.3335 8.8667 1.7448 10.1374 2.45038 11.195M5.07167 13.4906L1.3335 14.1666L2.45038 11.195M5.07167 13.4906L5.07709 13.4897M2.45038 11.195L2.45144 11.1922"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ShareIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn("stroke-text-muted size-4", className)}
+    >
+      <path
+        d="M7.39999 6.32003L15.89 3.49003C19.7 2.22003 21.77 4.30003 20.51 8.11003L17.68 16.6C15.78 22.31 12.66 22.31 10.76 16.6L9.91999 14.08L7.39999 13.24C1.68999 11.34 1.68999 8.23003 7.39999 6.32003Z"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10.11 13.6501L13.69 10.0601"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+;
