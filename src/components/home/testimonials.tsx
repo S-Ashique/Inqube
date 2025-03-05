@@ -8,7 +8,7 @@ const Testimonials = () => {
   return (
     <>
       <section className="width">
-        <div className="border-l border-r border-t padding py-16 md:flex md:gap-x-14 md:justify-between md:items-center">
+        <div className="border-l border-r border-t padding py-16 md:flex md:gap-x-14 md:justify-between md:items-center bg-accent">
           <div className="">
             <p className="px-4 py-2 bg-muted text-heading w-fit rounded-md">
               What Our Readers Say
@@ -17,12 +17,16 @@ const Testimonials = () => {
               Real Words from Real Readers
             </h1>
           </div>
-          <Links href={"/"} variant={"outline"} className="mt-16 md:mt-0 ">
+          <Links
+            href={"/"}
+            variant={"outline"}
+            className="mt-16 md:mt-0 bg-background "
+          >
             View All Testimonials
             <ArrowIcon />
           </Links>
         </div>
-        <div className="border-l border-r pb-10 lg:pb-14 padding grid lg:grid-cols-3 gap-y-8 gap-4 ">
+        <div className="border-l border-r border-t pb-10 lg:pb-14 padding grid lg:grid-cols-3 gap-y-8 gap-4 ">
           {testimonialList.map(({ comment, location, name, src }, index) => (
             <div key={index} className="grid grid-rows-2">
               <div className="flex items-center justify-center gap-3 ">

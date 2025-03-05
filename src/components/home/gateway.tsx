@@ -8,7 +8,7 @@ const Gateway = () => {
   return (
     <>
       <section className="width">
-        <div className="border-l border-r border-t padding py-16 md:flex md:gap-x-14 md:justify-between md:items-center">
+        <div className="border-l border-r border-t padding py-16 md:flex md:gap-x-14 md:justify-between md:items-center bg-accent">
           <div className="">
             <p className="px-4 py-2 bg-muted text-heading w-fit rounded-md">
               Your Gateway to In-Depth Information
@@ -17,7 +17,7 @@ const Gateway = () => {
               Unlock Valuable Knowledge with FutureTech's Resources
             </h1>
           </div>
-          <Links href={"/"} variant={"outline"} className="mt-16 md:mt-0 ">
+          <Links href={"/"} variant={"outline"} className="mt-16 md:mt-0 bg-background">
             View All Resources
             <ArrowIcon />
           </Links>

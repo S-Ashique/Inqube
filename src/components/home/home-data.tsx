@@ -202,3 +202,19 @@ export const testimonialList = [
       "The AI in healthcare reports have been an essential resource for our hospital. They highlight the latest innovations and best practices, improving patient care.",
   },
 ];
+
+
+export const contactList = [
+  {
+    title: "Resource Access",
+    text: "Visitors can access a wide range of resources, including ebooks, whitepapers, reports.",
+  },
+  {
+    title: "Community Forum",
+    text: "Join our active community forum to discuss industry trends and collaborate with peers.",
+  },
+  {
+    title: "Tech Events",
+    text: "Stay updated on upcoming tech events, webinars and conferences to enhance your knowledge.",
+  },
+];

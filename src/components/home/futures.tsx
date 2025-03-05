@@ -5,7 +5,7 @@ const Futures = () => {
   return (
     <>
       <section className="width">
-        <div className="border-l border-r border-t padding py-16">
+        <div className="border-l border-r border-t padding py-16 bg-accent">
           <p className="px-4 py-2 bg-muted text-heading w-fit rounded-md">
             Unlock the Power of
           </p>
