@@ -39,7 +39,7 @@ export const XIcon = ({ className }: { className?: string }) => {
   );
 };
 
-export const ArrowIcon = ({ className = "size-4" }: { className?: string }) => {
+export const ArrowIcon = ({ className }: { className?: string }) => {
   return (
     <svg
       width="21"
@@ -53,6 +53,62 @@ export const ArrowIcon = ({ className = "size-4" }: { className?: string }) => {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M7.375 3.625L16.75 3.625C16.9158 3.625 17.0747 3.69085 17.1919 3.80806C17.3092 3.92527 17.375 4.08424 17.375 4.25V13.625C17.375 13.9702 17.0952 14.25 16.75 14.25C16.4048 14.25 16.125 13.9702 16.125 13.625V5.75888L4.69194 17.1919C4.44786 17.436 4.05214 17.436 3.80806 17.1919C3.56398 16.9479 3.56398 16.5521 3.80806 16.3081L15.2411 4.875L7.375 4.875C7.02982 4.875 6.75 4.59518 6.75 4.25C6.75 3.90482 7.02982 3.625 7.375 3.625Z"
+      />
+    </svg>
+  );
+};
+
+export const DownloadIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn("size-6 stroke-[1.5] stroke-primary", className)}
+    >
+      <path
+        d="M9.31995 11.6799L11.8799 14.2399L14.4399 11.6799"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M11.88 4V14.17"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M20 12.1799C20 16.5999 17 20.1799 12 20.1799C7 20.1799 4 16.5999 4 12.1799"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const EyeIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      width="20"
+      height="15"
+      viewBox="0 0 20 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn("size-4 stroke-[1.5] stroke-primary", className)}
+    >
+      <path
+        d="M18.0023 6.52301C18.2153 6.79098 18.3332 7.13912 18.3332 7.50009C18.3332 7.86107 18.2153 8.20921 18.0023 8.47718C16.6536 10.1251 13.5836 13.3334 9.99984 13.3334C6.4161 13.3334 3.34616 10.1251 1.99744 8.47718C1.78442 8.20921 1.6665 7.86107 1.6665 7.50009C1.6665 7.13912 1.78442 6.79098 1.99744 6.52301C3.34616 4.87509 6.4161 1.66675 9.99984 1.66675C13.5836 1.66675 16.6536 4.87509 18.0023 6.52301Z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10.0003 10.0925C11.4191 10.0925 12.5693 8.93181 12.5693 7.49997C12.5693 6.06814 11.4191 4.90741 10.0003 4.90741C8.58145 4.90741 7.43127 6.06814 7.43127 7.49997C7.43127 8.93181 8.58145 10.0925 10.0003 10.0925Z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -329,4 +385,40 @@ export const ShareIcon = ({ className }: { className?: string }) => {
   );
 };
 
-;
+export const EbooksIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      width="46"
+      height="49"
+      viewBox="0 0 46 49"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn("size-12", className)}
+    >
+      <path
+        d="M21.5 29C21.5 20.3674 46.6449 5.00101 45.4594 10.7595C42.9819 22.7935 42.9819 35.2065 45.4594 47.2405C46.6449 52.999 21.5 37.6326 21.5 29Z"
+        className="fill-text-muted"
+      />
+      <path
+        d="M24.5 20C24.5 28.6326 -0.644857 43.999 0.540638 38.2405C3.01806 26.2065 3.01806 13.7935 0.540638 1.75952C-0.644857 -3.99898 24.5 11.3674 24.5 20Z"
+        className="fill-primary"
+      />
+    </svg>
+  );
+};
+
+export const WhitepaperIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      width="46"
+      height="49"
+      viewBox="0 0 46 49"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn("size-12", className)}
+    >
+      <path d="M21 0V48L0 36V12L21 0Z" className="fill-text-muted" />
+      <path d="M42 0V48L21 36V12L42 0Z" className="fill-primary" />
+    </svg>
+  );
+};

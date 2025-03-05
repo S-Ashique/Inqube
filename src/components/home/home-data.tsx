@@ -1,9 +1,11 @@
 import {
   ContributionIcon,
+  EbooksIcon,
   FuturesIcon,
   NewsIcon,
   ReadershipIcon,
   ResearchIcon,
+  WhitepaperIcon,
 } from "../svg";
 
 export const counterList = [
@@ -126,5 +128,52 @@ export const knowledgeProfilePictures = [
     like: "20k",
     comment: "31",
     share: "12",
+  },
+];
+
+export const gatewayList = [
+  {
+    icon: <EbooksIcon />,
+    title: "Ebooks",
+    titletext:
+      "Explore our collection of ebooks covering a wide spectrum of future technology topics.",
+    downloadlink: "/",
+    downloadedby: "10K",
+    downloadeduserimage: [
+      { src: "/female_one.png" },
+      { src: "/male_one.png" },
+      { src: "/female_two.png" },
+      { src: "/male_two.png" },
+    ],
+    topictitle: "Variety of Topics",
+    topictext:
+      "Topics include AI in education (25%), renewable energy (20%), healthcare (15%), space exploration (25%), and biotechnology (15%).",
+    topicimage: "/ebooks.webp",
+    totalnumber: "100",
+    topicsubtitle: "Average Author Expertise",
+    topicsubtext:
+      " Ebooks are authored by renowned experts with an average of 15 years of experience",
+  },
+  {
+    icon: <WhitepaperIcon />,
+    title: "Whitepapers",
+    titletext:
+      "Dive into comprehensive reports and analyses with our collection of whitepapers. ",
+    downloadlink: "/",
+    downloadedby: "5K",
+    downloadeduserimage: [
+      { src: "/female_one.png" },
+      { src: "/male_one.png" },
+      { src: "/male_two.png" },
+      { src: "/female_two.png" },
+    ],
+    topictitle: "Topics Coverage",
+    topictext:
+      "Whitepapers cover quantum computing (20%), AI ethics (15%), space mining prospects (20%), AI in healthcare (15%), and renewable energy strategies (30%).",
+    topicimage: "/whitepaper.webp",
+    totalnumber: "50",
+    topicsubtitle: "Average Author Expertise ",
+    topicsubtext:
+      " Whitepapers are authored by subject matter experts with an average of 20 years of experience.",
   },
 ];

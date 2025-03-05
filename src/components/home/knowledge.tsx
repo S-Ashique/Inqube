@@ -22,9 +22,9 @@ const Knowledge = () => {
             <p className="px-4 py-2 bg-muted text-heading w-fit rounded-md">
               A Knowledge Treasure Trove
             </p>
-            <p className="text-3xl font-semibold text-heading mt-4">
+            <h1 className="text-3xl font-semibold text-heading mt-4">
               Explore FutureTech's In-Depth Blog Posts
-            </p>
+            </h1>
           </div>
           <Links href={"/"} variant={"outline"} className="mt-16 md:mt-0 ">
             View All Blogs
@@ -57,7 +57,7 @@ const Knowledge = () => {
             ) => (
               <div
                 key={heading}
-                className="grid grid-cols-12 gap-3  py-10 border-b"
+                className="grid grid-cols-12 gap-3  py-10 border-b last:border-0"
               >
                 <div className="order-1 lg:order-1 col-span-8 lg:col-span-4 ">
                   <div className="flex items-center gap-4 ">

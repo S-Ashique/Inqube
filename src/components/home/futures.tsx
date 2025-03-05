@@ -9,9 +9,9 @@ const Futures = () => {
           <p className="px-4 py-2 bg-muted text-heading w-fit rounded-md">
             Unlock the Power of
           </p>
-          <p className="text-3xl font-semibold text-heading mt-4">
+          <h1 className="text-3xl font-semibold text-heading mt-4">
             Future Tech Features
-          </p>
+          </h1>
         </div>
 
         {futuresList.map(({ cards, heading, icon, text }) => (
