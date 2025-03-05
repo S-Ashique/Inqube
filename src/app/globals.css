@@ -34,7 +34,7 @@
 }
 
 @theme inline {
-  --color-*: initial;
+  /* --color-*: initial; */
   --color-background: var(--background);
   --color-primary: var(--primary);
   --color-red: var(--red);
@@ -48,7 +48,7 @@
 
 @layer base {
   * {
-    @apply border-border focus-visible:outline-none;
+    @apply border-border focus-visible:outline-none select-none;
   }
   body {
     @apply bg-background text-text text-sm;
@@ -66,4 +66,8 @@
   .width {
     @apply w-[97%] max-w-[90rem] mx-auto;
   }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  
 }

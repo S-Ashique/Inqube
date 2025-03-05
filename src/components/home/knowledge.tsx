@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Links } from "../ui/links";
 import { ArrowIcon, CommentIcon, LikeIcon, ShareIcon } from "../svg";
 import { knowledgeProfilePictures } from "./home-data";
@@ -14,6 +15,10 @@ const navLinks = [
 ];
 
 const Knowledge = () => {
+  const [isTabDraggable, setIsTabDraggable] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
   return (
     <>
       <section className="width">
@@ -31,12 +36,37 @@ const Knowledge = () => {
             <ArrowIcon />
           </Links>
         </div>
-        <div className="py-6 border-l border-r border-t flex justify-center gap-x-3 padding overflow-clip">
-          {navLinks.map(({ label, href }) => (
-            <Links key={label} href={href} variant={"outline"}>
-              {label}
-            </Links>
-          ))}
+        <div className=" border-l border-r border-t relative">
+          <div className="absolute inset-0 [background-image:linear-gradient(to_right,var(--accent),transparent_10%,transparent_90%,var(--accent))]"></div>
+          <div
+            className="flex  gap-x-3 padding overflow-x-scroll py-6 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)] "
+            onMouseDown={(e) => {
+              setIsTabDraggable(true);
+              setStartX(e.pageX);
+              setScrollLeft(e.currentTarget.scrollLeft);
+            }}
+            onMouseMove={(e) => {
+              if (!isTabDraggable) return;
+              e.preventDefault();
+              e.currentTarget.scrollLeft = scrollLeft - (e.pageX - startX);
+            }}
+            onMouseUp={() => setIsTabDraggable(false)}
+            onMouseLeave={() => setIsTabDraggable(false)}
+          >
+            {[...navLinks, ...navLinks, ...navLinks].map(
+              ({ label, href }, index) => (
+                <Links
+                  draggable={false}
+                  key={index}
+                  href={href}
+                  variant={"outline"}
+                  className=" first:ms-8 last:me-8 first:bg-primary first:text-heading first:hover:bg-primary/80 first:focus-visible:bg-primary/80 first:active:bg-primary/80 "
+                >
+                  {label}
+                </Links>
+              )
+            )}
+          </div>
         </div>
         <div className=" border-l border-r border-t padding ">
           {knowledgeProfilePictures.map(
@@ -65,8 +95,8 @@ const Knowledge = () => {
                       <Image
                         src={src}
                         alt="profile picture"
-                        height={64}
-                        width={64}
+                        height={80}
+                        width={80}
                         className="size-full object-cover object-center"
                       />
                     </div>
@@ -103,7 +133,7 @@ const Knowledge = () => {
 
                 <div className="order-2 lg:order-3 col-span-4 lg:col-span-2 flex items-center justify-end">
                   <Links href={link} variant={"outline"}>
-                    Read 
+                    Read
                     <ArrowIcon />
                   </Links>
                 </div>
