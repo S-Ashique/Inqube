@@ -24,22 +24,26 @@ const Knowledge = () => {
       <section className="width">
         <div className="border-l border-r border-t padding py-16 md:flex md:gap-x-14 md:justify-between md:items-center bg-accent">
           <div className="">
-            <p className="px-4 py-2 bg-muted text-heading w-fit rounded-md">
+            <p className="px-4 py-2 bg-muted text-heading w-fit rounded-md font-medium">
               A Knowledge Treasure Trove
             </p>
-            <h1 className="text-3xl font-semibold text-heading mt-4">
+            <h1 className="text-4xl font-bold text-heading mt-4">
               Explore FutureTech's In-Depth Blog Posts
             </h1>
           </div>
-          <Links href={"/"} variant={"outline"} className="mt-16 md:mt-0 bg-background">
+          <Links
+            href={"/"}
+            variant={"outline"}
+            className="mt-10 md:mt-0 bg-background hover:bg-muted group hover:translate-x-1 hover:-translate-y-1"
+          >
             View All Blogs
-            <ArrowIcon />
+            <ArrowIcon className="group-hover:rotate-0 animated" />
           </Links>
         </div>
         <div className=" border-l border-r border-t relative">
-          <div className="absolute inset-0 [background-image:linear-gradient(to_right,var(--accent),transparent_10%,transparent_90%,var(--accent))]"></div>
+          <div className="absolute inset-0 [background-image:linear-gradient(to_right,var(--muted),transparent_10%,transparent_90%,var(--muted))]"></div>
           <div
-            className="flex  gap-x-3 padding overflow-x-scroll py-6 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)] "
+            className="flex cursor-grab  gap-x-3 padding overflow-x-scroll py-6 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] "
             onMouseDown={(e) => {
               setIsTabDraggable(true);
               setStartX(e.pageX);
@@ -91,7 +95,7 @@ const Knowledge = () => {
               >
                 <div className="order-1 lg:order-1 col-span-8 lg:col-span-4 ">
                   <div className="flex items-center gap-4 ">
-                    <div className="size-20 overflow-hidden rounded-full bg-accent ">
+                    <div className="size-16 md:size-20 shrink-0 overflow-hidden rounded-full bg-muted ">
                       <Image
                         src={src}
                         alt="profile picture"
@@ -101,40 +105,47 @@ const Knowledge = () => {
                       />
                     </div>
                     <div className="">
-                      <p className="text-heading text-base font-medium">
+                      <p className="text-heading text-base md:text-lg font-medium">
                         {name}
                       </p>
-                      <p>{subject} </p>
+                      <p className="text-xs md:text-base text-light">
+                        {subject}{" "}
+                      </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="order-3  lg:order-2 col-span-full lg:col-span-6 ">
-                  <p>{date} </p>
-                  <h3 className="mt-6 text-heading font-medium text-xl">
+                  <p className="text-light">{date} </p>
+                  <h4 className="mt-6 text-heading font-medium text-xl">
                     {heading}{" "}
-                  </h3>
-                  <p>{text} </p>
+                  </h4>
+                  <p className="mt-2">{text} </p>
                   <div className="flex gap-4 mt-4">
                     <div className="flex items-center gap-1 px-3 py-1 border rounded-full bg-accent">
                       <LikeIcon
                         className={index === 0 ? "fill-red stroke-red" : " "}
                       />
-                      <span> {like}</span>
+                      <span className="text-sm"> {like}</span>
                     </div>
                     <div className="flex items-center gap-1 px-3 py-1 border rounded-full bg-accent">
-                      <CommentIcon /> <span> {comment} </span>
+                      <CommentIcon />{" "}
+                      <span className="text-sm"> {comment} </span>
                     </div>
                     <div className="flex items-center gap-1 px-3 py-1 border rounded-full bg-accent">
-                      <ShareIcon /> <span> {share}</span>
+                      <ShareIcon /> <span className="text-sm"> {share}</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="order-2 lg:order-3 col-span-4 lg:col-span-2 flex items-center justify-end">
-                  <Links href={link} variant={"outline"}>
+                  <Links
+                    href={link}
+                    variant={"outline"}
+                    className="hover:translate-x-1 hover:-translate-y-1 group"
+                  >
                     Read
-                    <ArrowIcon />
+                    <ArrowIcon className="group-hover:rotate-0 animated" />
                   </Links>
                 </div>
               </div>

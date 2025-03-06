@@ -23,13 +23,13 @@ const ColumnOne = ({ className }: { className?: string }) => {
   return (
     <div className={cn(" grid md:grid-rows-4 gap-px", className)}>
       <div className="pt-24 pb-14 bg-background padding md:row-span-3">
-        <p className="text-lg text-text-muted font-medium">
+        <p className="text-lg md:text-xl font-medium text-light">
           Your Path to the Future Starts Today
         </p>
-        <h1 className="text-3xl font-semibold text-heading mt-1">
+        <h1 className="text-4xl font-bold text-heading mt-1">
           Discover New Horizons in Artificial Intelligence
         </h1>
-        <p className="mt-8 max-w-xl">
+        <p className="mt-8 max-w-xl ">
           Welcome to the hub of AI innovation. FutureTech AI News is your
           gateway to a world where machines evolve, learn, and transform the
           future.
@@ -38,11 +38,11 @@ const ColumnOne = ({ className }: { className?: string }) => {
       <div className="grid grid-cols-3 gap-px md:row-span-1">
         {counterList.map(({ number, title }) => (
           <div key={number} className="bg-background px-2 py-6 text-center">
-            <h1 className="text-3xl text-heading font-semibold">
+            <h2 className="text-3xl text-heading font-semibold">
               {number}
               <span className="text-primary">+</span>
-            </h1>
-            <p className="mt-3">{title}</p>
+            </h2>
+            <p className="mt-3 font-medium">{title}</p>
           </div>
         ))}
       </div>
@@ -63,12 +63,12 @@ const ColumnTwo = ({ className }: { className?: string }) => {
         />
       </div>
 
-      <div className="px-10 pt-36 pb-14 relative">
+      <div className="px-10 pt-36 pb-14 relative ">
         <div className="flex items-center -space-x-4 border  p-2 w-fit rounded-full bg-muted">
           {profilePictures.map((imageSrc, index) => (
             <div
               key={index}
-              className="size-16 rounded-full bg-accent border hover:z-10 focus:z-10 overflow-hidden"
+              className="size-16 rounded-full bg-secondary border hover:z-10 focus:z-10 overflow-hidden"
             >
               <Image
                 src={imageSrc}
@@ -80,9 +80,9 @@ const ColumnTwo = ({ className }: { className?: string }) => {
             </div>
           ))}
         </div>
-        <p className="text-heading mt-8 text-xl font-medium">
+        <h4 className="text-heading mt-8 text-xl font-semibold">
           Explore 1000+ resources
-        </p>
+        </h4>
         <p className="mt-4">
           Explore over 1,000 articles on cutting-edge tech trends and
           breakthroughs.
@@ -101,19 +101,23 @@ const ColumnThree = ({ className }: { className?: string }) => {
       {columnThreeList.map(({ icon, text1, text2, title }) => (
         <div
           key={title}
-          className=" bg-background px-4 py-6 flex justify-between md:justify-around items-center gap-4"
+          className=" bg-background px-4 py-6 flex justify-between md:justify-around items-center gap-4 group"
         >
           <div className="h-full grid grid-rows-3 gap-4">
             {icon}
             <div className="">
               <p className="font-medium text-heading text-lg">{title}</p>
-              <p className="text-text-muted">{text1}</p>
+              <p className="text-light ">{text1}</p>
             </div>
-            <p className="">{text2}</p>
+            <p className="text-balance">{text2}</p>
           </div>
 
-          <Links href={"/"} size={"icon"} className="rounded-full">
-            <ArrowIcon />
+          <Links
+            href={"/"}
+            size={"icon"}
+            className="rounded-full group-hover:translate-x-1 group-hover:-translate-y-1"
+          >
+            <ArrowIcon className="group-hover:rotate-0 animated" />
           </Links>
         </div>
       ))}

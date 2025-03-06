@@ -12,10 +12,10 @@ const GetInTouch = () => {
             <LogoIcon className="size-20" />
           </div>
           <div className="">
-            <p className="px-4 py-2 bg-muted text-heading w-fit rounded-md">
+            <p className="px-4 py-2 bg-muted text-heading w-fit rounded-md font-medium">
               Learn, Connect, and Innovate
             </p>
-            <h1 className="text-3xl font-semibold text-heading mt-3">
+            <h1 className="text-4xl font-bold text-heading mt-4">
               Be Part of the Future Tech Revolution
             </h1>
             <p className="mt-6 max-w-2xl">
@@ -27,18 +27,24 @@ const GetInTouch = () => {
           </div>
         </div>
         <div className=" sm:w-4/6 lg:w-full mx-auto pb-10 ">
-          <div className=" bg-background p-1 grid lg:grid-cols-3 gap-1 rounded-md">
+          <div className=" bg-background p-1 grid lg:grid-cols-3 gap-1 rounded-md ">
             {contactList.map(({ text, title }) => (
               <div
                 key={title}
-                className="bg-accent rounded-md px-4 py-6 flex items-center justify-between gap-4"
+                className="bg-accent rounded-md px-4 py-6 flex items-center justify-between gap-4 group"
               >
                 <div className=" h-full">
-                  <p className="text-lg from-heading font-medium ">{title} </p>
+                  <h4 className="text-xl text-heading font-medium ">
+                    {title}{" "}
+                  </h4>
                   <p className="mt-2 text-balance">{text} </p>
                 </div>
-                <Links href={"/"} size={"icon"} className="rounded-full">
-                  <ArrowIcon />
+                <Links
+                  href={"/"}
+                  size={"icon"}
+                  className="rounded-full group-hover:translate-x-1 group-hover:-translate-y-1"
+                >
+                  <ArrowIcon className="group-hover:rotate-0 animated" />
                 </Links>
               </div>
             ))}

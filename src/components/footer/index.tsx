@@ -88,10 +88,10 @@ const NavLinks = ({
                 <ArrowIcon />
               </Links>
             ) : (
-              <Link key={label} href={href} className="flex items-center gap-2">
+              <Link key={label} href={href} className="flex items-center gap-2 hover:text-heading hover:font-medium animated">
                 {label}
                 {newLink && (
-                  <span className="px-1 py-0.5 bg-accent inline-block rounded-md text-xs">
+                  <span className="px-1 py-0.5 bg-muted text-heading inline-block rounded-md text-xs">
                     New
                   </span>
                 )}
