@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Links } from "../ui/links";
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "News", href: "/" },
+  { label: "News", href: "/news" },
   { label: "Podcasts", href: "/" },
   { label: "Resources", href: "/" },
 ];
