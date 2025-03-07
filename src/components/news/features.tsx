@@ -39,7 +39,7 @@ const Features = () => {
                     className="size-full object-cover object-center"
                   />
                 </div>
-                <div className="absolute left-1/2 -translate-y-1/2 top-1/2 -translate-x-1/2 mix-blend-difference bg-background/50 backdrop-blur-3xl rounded-full overflow-hidden">
+                <div className="absolute left-1/2 -translate-y-1/2 top-1/2 -translate-x-1/2 bg-background  rounded-full overflow-hidden">
                   <PlayIcon className=" " />
                 </div>
                 <p className="text-heading font-medium absolute bottom-1 right-2">

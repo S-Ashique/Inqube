@@ -4,10 +4,10 @@ import { LogoIcon, MenuIcon, XIcon } from "../svg";
 import Link from "next/link";
 import { Links } from "../ui/links";
 const navLinks = [
-  { label: "Blog", href: "/blog" },
+  { label: "Blog", href: "/blogs" },
   { label: "News", href: "/news" },
-  { label: "Podcasts", href: "/" },
-  { label: "Resources", href: "/" },
+  { label: "Podcasts", href: "/podcasts" },
+  { label: "Resources", href: "/resources" },
 ];
 
 const Navbar = () => {

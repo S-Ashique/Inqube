@@ -4,7 +4,7 @@ import { ArrowIcon, CommentIcon, LikeIcon, ShareIcon } from "../svg";
 import { Links } from "../ui/links";
 import { newsList } from "./news-data";
 import Link from "next/link";
-import Related from "../blog/related";
+import Related from "../blogs/related";
 
 const Hero = () => {
   return (

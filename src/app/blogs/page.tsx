@@ -1,6 +1,6 @@
-import Hero from "@/components/blog/hero";
-import BlogNews from "@/components/blog/news";
-import Related from "@/components/blog/related";
+import Hero from "@/components/blogs/hero";
+import BlogNews from "@/components/blogs/news";
+import Related from "@/components/blogs/related";
 import React from "react";
 
 const Blog = () => {
