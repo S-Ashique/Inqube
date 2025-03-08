@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LogoIcon, MenuIcon, XIcon } from "../svg";
 import Link from "next/link";
 import { Links } from "../ui/links";
@@ -12,6 +12,19 @@ const navLinks = [
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        document.body.style.overflow = "auto";
+        setShow(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <div className="sticky width top-0 z-20">
@@ -66,6 +79,9 @@ const Navbar = () => {
                     key={label}
                     href={href}
                     variant={"link"}
+                    onClick={() => {
+                      setShow(false);
+                    }}
                   >
                     {label}
                   </Links>
