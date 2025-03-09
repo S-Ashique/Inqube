@@ -11,9 +11,9 @@ import Link from "next/link";
 import { Links } from "../ui/links";
 import { ArrowIcon, LinkdInIcon, MediumIcon, TwitterIcon } from "../svg";
 import { cn } from "@/lib/utils";
+import ThemeToggler from "../theme/theme-toggler";
 
 const Footer = () => {
-
   return (
     <>
       <footer className="width border">
@@ -29,8 +29,9 @@ const Footer = () => {
             className="col-span-full md:col-span-2 lg:col-span-1"
           />
         </div>
-        <div className="padding ">
-          <div className="border-t py-10 flex flex-col md:flex-row md:justify-between items-center ">
+        <div className="padding border-t">
+          <ThemeToggler className="pt-5" />
+          <div className=" py-5 flex flex-col md:flex-row md:justify-between items-center ">
             <div className="flex gap-4 items-center md:order-2">
               <Link href={"/"}>
                 <TwitterIcon />
@@ -47,7 +48,7 @@ const Footer = () => {
               <span className="ps-1 "> Privacy Policy </span>
             </p>
             <p className="mt-2 md:mt-0 md:order-3">
-              &copy; {new Date().getFullYear()} Blogg. All rights reserved.
+              &copy; {new Date().getFullYear()} Inqube. All rights reserved.
             </p>
           </div>
         </div>
@@ -88,7 +89,11 @@ const NavLinks = ({
                 <ArrowIcon />
               </Links>
             ) : (
-              <Link key={label} href={href} className="flex items-center gap-2 hover:text-heading hover:font-medium animated">
+              <Link
+                key={label}
+                href={href}
+                className="flex items-center gap-2 hover:text-heading hover:font-medium animated"
+              >
                 {label}
                 {newLink && (
                   <span className="px-1 py-0.5 bg-muted text-heading inline-block rounded-md text-xs">

@@ -11,7 +11,7 @@
 
   --heading: hsl(0 0% 4%);
   --secondary: hsl(0, 0%, 20%);
-  --light: hsl(0 0% 45%);
+  --light: rgb(115, 115, 115);
 
   --border: hsl(0 0% 85%);
 }

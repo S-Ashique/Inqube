@@ -32,7 +32,7 @@ const Navbar = () => {
           <Link href={"/"} className="flex items-center gap-2">
             <LogoIcon className="size-6" />
             <span className="text-heading tracking-tight font-medium text-2xl">
-              Blogg
+              Inqube
             </span>
           </Link>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          <Links href={"/"} className=" hidden md:inline-flex">
+          <Links href={"/contact"} className=" hidden md:inline-flex">
             Contact Us
           </Links>
 
@@ -87,7 +87,7 @@ const Navbar = () => {
                   </Links>
                 ))}
 
-                <Links href={"/"} className="">
+                <Links href={"/contact"} className="">
                   Contact Us
                 </Links>
               </div>
